@@ -6,7 +6,6 @@
 //
 
 #import "OCViewController.h"
-@import SkywalkerOC;
 
 @interface OCViewController ()
 

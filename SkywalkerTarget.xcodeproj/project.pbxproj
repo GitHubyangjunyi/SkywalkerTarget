@@ -56,6 +56,7 @@
 		1CDF62D0279CED5700AAAD82 /* SkywalkerTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkywalkerTarget-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CDF62D1279CED5800AAAD82 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
 		1CDF62D2279CED5800AAAD82 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
+		1CDF62D4279D060300AAAD82 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 				1CDF62A7279CE86D00AAAD82 /* Info.plist */,
 				1CDF62D1279CED5800AAAD82 /* OCViewController.h */,
 				1CDF62D2279CED5800AAAD82 /* OCViewController.m */,
+				1CDF62D4279D060300AAAD82 /* PrefixHeader.pch */,
 				1CDF62D0279CED5700AAAD82 /* SkywalkerTarget-Bridging-Header.h */,
 			);
 			path = SkywalkerTarget;
@@ -476,6 +478,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGN5857P43;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkywalkerTarget/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkywalkerTarget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -507,6 +511,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGN5857P43;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SkywalkerTarget/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SkywalkerTarget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
