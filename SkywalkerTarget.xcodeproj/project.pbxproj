@@ -16,6 +16,8 @@
 		1CDF62B1279CE86E00AAAD82 /* SkywalkerTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF62B0279CE86E00AAAD82 /* SkywalkerTargetTests.swift */; };
 		1CDF62BB279CE86E00AAAD82 /* SkywalkerTargetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF62BA279CE86E00AAAD82 /* SkywalkerTargetUITests.swift */; };
 		1CDF62BD279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF62BC279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift */; };
+		1CDF62CD279CEAD400AAAD82 /* Skywalker in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDF62CC279CEAD400AAAD82 /* Skywalker */; };
+		1CDF62CF279CEAD400AAAD82 /* SkywalkerOC in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDF62CE279CEAD400AAAD82 /* SkywalkerOC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		1CDF62B6279CE86E00AAAD82 /* SkywalkerTargetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkywalkerTargetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDF62BA279CE86E00AAAD82 /* SkywalkerTargetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywalkerTargetUITests.swift; sourceTree = "<group>"; };
 		1CDF62BC279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywalkerTargetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CDF62CA279CEABD00AAAD82 /* Skywalker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Skywalker; path = Packages/Skywalker; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDF62CF279CEAD400AAAD82 /* SkywalkerOC in Frameworks */,
+				1CDF62CD279CEAD400AAAD82 /* Skywalker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +84,12 @@
 		1CDF628D279CE86C00AAAD82 = {
 			isa = PBXGroup;
 			children = (
+				1CDF62C9279CEABD00AAAD82 /* Packages */,
 				1CDF6298279CE86C00AAAD82 /* SkywalkerTarget */,
 				1CDF62AF279CE86E00AAAD82 /* SkywalkerTargetTests */,
 				1CDF62B9279CE86E00AAAD82 /* SkywalkerTargetUITests */,
 				1CDF6297279CE86C00AAAD82 /* Products */,
+				1CDF62CB279CEAD400AAAD82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,21 @@
 			path = SkywalkerTargetUITests;
 			sourceTree = "<group>";
 		};
+		1CDF62C9279CEABD00AAAD82 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1CDF62CA279CEABD00AAAD82 /* Skywalker */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1CDF62CB279CEAD400AAAD82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +165,10 @@
 			dependencies = (
 			);
 			name = SkywalkerTarget;
+			packageProductDependencies = (
+				1CDF62CC279CEAD400AAAD82 /* Skywalker */,
+				1CDF62CE279CEAD400AAAD82 /* SkywalkerOC */,
+			);
 			productName = SkywalkerTarget;
 			productReference = 1CDF6296279CE86C00AAAD82 /* SkywalkerTarget.app */;
 			productType = "com.apple.product-type.application";
@@ -604,6 +630,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CDF62CC279CEAD400AAAD82 /* Skywalker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Skywalker;
+		};
+		1CDF62CE279CEAD400AAAD82 /* SkywalkerOC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SkywalkerOC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CDF628E279CE86C00AAAD82 /* Project object */;
 }
