@@ -18,6 +18,7 @@
 		1CDF62BD279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF62BC279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift */; };
 		1CDF62CD279CEAD400AAAD82 /* Skywalker in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDF62CC279CEAD400AAAD82 /* Skywalker */; };
 		1CDF62CF279CEAD400AAAD82 /* SkywalkerOC in Frameworks */ = {isa = PBXBuildFile; productRef = 1CDF62CE279CEAD400AAAD82 /* SkywalkerOC */; };
+		1CDF62D3279CED5800AAAD82 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF62D2279CED5800AAAD82 /* OCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		1CDF62BA279CE86E00AAAD82 /* SkywalkerTargetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywalkerTargetUITests.swift; sourceTree = "<group>"; };
 		1CDF62BC279CE86E00AAAD82 /* SkywalkerTargetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywalkerTargetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CDF62CA279CEABD00AAAD82 /* Skywalker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Skywalker; path = Packages/Skywalker; sourceTree = "<group>"; };
+		1CDF62D0279CED5700AAAD82 /* SkywalkerTarget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkywalkerTarget-Bridging-Header.h"; sourceTree = "<group>"; };
+		1CDF62D1279CED5800AAAD82 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
+		1CDF62D2279CED5800AAAD82 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,9 @@
 				1CDF62A2279CE86D00AAAD82 /* Assets.xcassets */,
 				1CDF62A4279CE86D00AAAD82 /* LaunchScreen.storyboard */,
 				1CDF62A7279CE86D00AAAD82 /* Info.plist */,
+				1CDF62D1279CED5800AAAD82 /* OCViewController.h */,
+				1CDF62D2279CED5800AAAD82 /* OCViewController.m */,
+				1CDF62D0279CED5700AAAD82 /* SkywalkerTarget-Bridging-Header.h */,
 			);
 			path = SkywalkerTarget;
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 				TargetAttributes = {
 					1CDF6295279CE86C00AAAD82 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					1CDF62AB279CE86E00AAAD82 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -286,6 +294,7 @@
 			files = (
 				1CDF629E279CE86C00AAAD82 /* ViewController.swift in Sources */,
 				1CDF629A279CE86C00AAAD82 /* AppDelegate.swift in Sources */,
+				1CDF62D3279CED5800AAAD82 /* OCViewController.m in Sources */,
 				1CDF629C279CE86C00AAAD82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGN5857P43;
@@ -481,6 +491,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.githubyangjunyi.com.SkywalkerTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SkywalkerTarget/SkywalkerTarget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGN5857P43;
@@ -509,6 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.githubyangjunyi.com.SkywalkerTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SkywalkerTarget/SkywalkerTarget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

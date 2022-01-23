@@ -11,7 +11,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        
+        let vc = OCViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
 
