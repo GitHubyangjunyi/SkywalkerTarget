@@ -26,7 +26,9 @@ class ViewController: UIViewController {
         b.isNeedDelay = true
         
         
-        
+        let timer = GCDTimer.scheduledTimer(withTimeInterval: 1, repeats: true, queue: DispatchQueue.main) {
+            
+        }
         
         
         
