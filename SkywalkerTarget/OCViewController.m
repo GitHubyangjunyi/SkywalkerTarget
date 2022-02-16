@@ -32,12 +32,6 @@
     b.isNeedDelay = YES;
     
     
-    [GCDTimer scheduledTimerWithTimeInterval:1 repeats:NO queue:dispatch_get_global_queue(0, 0) block:^{
-        
-     }];
-    
-    
-    
     
     
     

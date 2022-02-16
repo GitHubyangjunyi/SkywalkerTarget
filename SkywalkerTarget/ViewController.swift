@@ -6,8 +6,6 @@
 //
 
 import UIKit
-@_exported import Skywalker;
-@_exported import SkywalkerOC;
 
 class ViewController: UIViewController {
 
@@ -18,20 +16,12 @@ class ViewController: UIViewController {
         
         
         
-        let vc = OCViewController.init()
-        self.navigationController?.pushViewController(vc, animated: true)
-        
-        
-        let b = UIButton.init(type: .custom)
-        b.isNeedDelay = true
-        
-        
-        let timer = GCDTimer.scheduledTimer(withTimeInterval: 1, repeats: true, queue: DispatchQueue.main) {
-            
-        }
         
         
         
+        
+//        let vc = OCViewController.init()
+//        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 
